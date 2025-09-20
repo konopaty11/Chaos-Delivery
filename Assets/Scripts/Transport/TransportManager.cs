@@ -208,6 +208,8 @@ public class TransportManager : MonoBehaviour
                 GameObject bike = Instantiate(prefab, GarageManager.Instance.Spawn);
                 bike.SetActive(true);
                 bike.transform.SetParent(null);
+
+                CurrentTransport = bike;
             }
         }
 

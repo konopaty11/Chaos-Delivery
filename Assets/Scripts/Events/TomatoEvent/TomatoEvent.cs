@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TomatoEvent : GameEvent
@@ -17,6 +18,8 @@ public class TomatoEvent : GameEvent
     {
         while (true)
         {
+            if (player == null) yield break;
+
             foreach (Transform tomatoTransform in tomatoTransfroms)
             {
                 GameObject tomato = Instantiate(prefabTomato, tomatoTransform, false);

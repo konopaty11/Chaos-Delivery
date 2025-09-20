@@ -374,6 +374,10 @@ public class OrderManager : MonoBehaviour
         IsWorking = false;
     }
 
-    void RestoreBox() =>  TransportManager.Instance.CurrentTransportController.Box?.SetActive(true);
+    void RestoreBox()
+    {
+        if (issuePrefab.activeSelf)
+            TransportManager.Instance.CurrentTransportController.Box?.SetActive(true);
+    }
 
 }

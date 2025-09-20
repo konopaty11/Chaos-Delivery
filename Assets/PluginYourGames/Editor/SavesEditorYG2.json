@@ -1,0 +1,49 @@
+{
+    "intExample": 5,
+    "strExample": "Hello!",
+    "boolExample": [
+        false,
+        false,
+        false,
+        false
+    ],
+    "idSave": 112,
+    "upgrades": [
+        {
+            "transportType": 2,
+            "powerLevel": 1,
+            "stiffnessLevel": 1,
+            "strengthLevel": 1
+        },
+        {
+            "transportType": 3,
+            "powerLevel": 1,
+            "stiffnessLevel": 1,
+            "strengthLevel": 1
+        },
+        {
+            "transportType": 4,
+            "powerLevel": 1,
+            "stiffnessLevel": 1,
+            "strengthLevel": 1
+        },
+        {
+            "transportType": 5,
+            "powerLevel": 5,
+            "stiffnessLevel": 3,
+            "strengthLevel": 1
+        }
+    ],
+    "bikeUpgrades": [
+        {
+            "transportType": 1,
+            "powerLevel": 1,
+            "stiffnessLevel": 1,
+            "strengthLevel": 1,
+            "staminaLevel": 1
+        }
+    ],
+    "currentPlot": 1,
+    "UnlockTypeOrder": 2,
+    "level": 8.129000663757325
+}

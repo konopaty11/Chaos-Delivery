@@ -35,9 +35,6 @@
 ![доставка заказа](Assets/Readme/Gifs/PoliceEvent.gif)
 - Но в то же время набирайте скорость, чтобы увернуться от помидоров хулиганов!
 ![доставка заказа](Assets/Readme/Gifs/TomatoEvent.gif)
-<div width="300px">
-  <img src="https://media.giphy.com/media/3o7TKxZ6g0lMeHodxu/giphy.gif">
-</div>
 
 <details> 
 <summary><h2>FAQ</h2></summary>
@@ -50,3 +47,6 @@
 Все покупки, примененные улучшения, выбранный транспорт, а также заработанные деньги и опыт сохраняются. И автоматически загружаются при повторном заходе в игру.
 
 </details>
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name

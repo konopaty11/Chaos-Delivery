@@ -1,14 +1,12 @@
 # Chaos Delivery
 
-
-
 <div align="center" style="border: 2px solid #e1e4e8; border-radius: 10px; padding: 20px; margin: 20px 0; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
 
 <!-- Верхняя часть - картинка -->
 <div style="margin-bottom: 20px;">
   <img src="Assets/Readme/Arts/Logo.png" 
        alt="Баннер проекта" 
-       style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%; height: auto;">
+       style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 50%; height: auto;">
 </div>
 
 <!-- Нижняя часть - текст -->

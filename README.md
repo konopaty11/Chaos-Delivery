@@ -35,7 +35,7 @@
 ![доставка заказа](Assets/Readme/Gifs/PoliceEvent.gif)
 - Но в то же время набирайте скорость, чтобы увернуться от помидоров хулиганов!
 ![доставка заказа](Assets/Readme/Gifs/TomatoEvent.gif)
-<div style="max-width: 300px;">
+<div width="300px">
   <img src="https://media.giphy.com/media/3o7TKxZ6g0lMeHodxu/giphy.gif">
 </div>
 

@@ -24,6 +24,7 @@
 
 ## Гемплей
 - Совершайте разнообразные заказы: <strong>обычные заказы</strong>, <strong>заказы на время</strong>, доставляйте <strong>контрабанду</strong>!
+<div>
 ![доставка заказа](Assets/Readme/Gifs/IssueOrder.gif)
 - Выбирайте и покупайте новый транспорт.
 ![доставка заказа](Assets/Readme/Gifs/BuyTransport.gif)
@@ -35,7 +36,10 @@
 ![доставка заказа](Assets/Readme/Gifs/PoliceEvent.gif)
 - Но в то же время набирайте скорость, чтобы увернуться от помидоров хулиганов!
 ![доставка заказа](Assets/Readme/Gifs/TomatoEvent.gif)
-<img src="Assets/Readme/Gifs/TomatoEvent.gif" alt="GIF пример" style="max-width: 100px; height: auto;">
+<div style="max-width: 300px;">
+  <img src="https://media.giphy.com/media/3o7TKxZ6g0lMeHodxu/giphy.gif" alt="GIF пример" style="width: 100%;">
+</div>
+
 <details> 
 <summary><h2>FAQ</h2></summary>
 

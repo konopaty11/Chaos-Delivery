@@ -24,7 +24,6 @@
 
 ## Гемплей
 - Совершайте разнообразные заказы: <strong>обычные заказы</strong>, <strong>заказы на время</strong>, доставляйте <strong>контрабанду</strong>!
-<div>
 ![доставка заказа](Assets/Readme/Gifs/IssueOrder.gif)
 - Выбирайте и покупайте новый транспорт.
 ![доставка заказа](Assets/Readme/Gifs/BuyTransport.gif)

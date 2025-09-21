@@ -92,7 +92,7 @@ public class LevelManager : MonoBehaviour
             if (orderType > OrderManager.Instance.UnlockTypeOrder && this.level >= level)
             {
                 OrderManager.Instance.UnlockTypeOrder = orderType;
-                YG2.saves.UnlockTypeOrder = orderType;
+                YG2.saves.unlockTypeOrder = orderType;
                 PromptManager.Instance.ShowPrompt($"Вау. Вам доступен новый тип заказов: {OrderManager.Instance.GetStringOfOrderType(orderType)}", 5f);
             }
     }

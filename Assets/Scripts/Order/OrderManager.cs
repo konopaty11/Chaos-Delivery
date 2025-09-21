@@ -37,6 +37,9 @@ public class OrderManager : MonoBehaviour
     [SerializeField] CanvasGroup _getTotalButtonCanvasGroup;
     [SerializeField] RectTransform directionArrow;
 
+    [Header("AudioSource")]
+    [SerializeField] AudioSource audioSource;
+
     public static OrderManager Instance { get; private set; }
 
     public OrderType UnlockTypeOrder { get; set; } = OrderType.Default;
@@ -86,7 +89,7 @@ public class OrderManager : MonoBehaviour
         pickUpPortal.Listener = PickUp;
         issuePortal.Listener = Issue;
 
-        UnlockTypeOrder = YG2.saves.UnlockTypeOrder;
+        UnlockTypeOrder = YG2.saves.unlockTypeOrder;
     }
 
     IEnumerator GenerateOrders()
@@ -193,6 +196,8 @@ public class OrderManager : MonoBehaviour
 
         SetPickUpParams(newOrder);
         UIManager.Instance.ShowUI("Order", false, true);
+
+        audioSource.Play();
     }
 
     void CreateOrder()

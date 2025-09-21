@@ -94,8 +94,11 @@ public class TransportManager : MonoBehaviour
 
     void Start()
     {
-        if (YG2.saves.UnlockTransports != null)
-            TransportUnlock = YG2.saves.UnlockTransports;
+        Dictionary<TransportType, bool> savesDict = UnlockTransportSerialize.GetDict();
+        if (savesDict.Count > 0)
+        {
+            TransportUnlock = savesDict;
+        }
 
         foreach (TransportController controller in transportControllers)
             transports.Add(controller.gameObject);
@@ -103,8 +106,7 @@ public class TransportManager : MonoBehaviour
 
     public void SaveUnlockTransport()
     {
-        YG2.saves.UnlockTransports = TransportUnlock;
-        YG2.SaveProgress();
+        UnlockTransportSerialize.SaveDict(TransportUnlock);
     }
 
     public void Terminate(List<GameObject> fallAwayObjects, List<WheelCollider> wheelColidersF, List<WheelCollider> wheelColidersR, Vector3 point)

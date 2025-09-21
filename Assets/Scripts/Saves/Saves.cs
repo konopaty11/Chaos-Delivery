@@ -7,10 +7,12 @@ namespace YG
         public List<UpgradeData> upgrades;
         public List<BikeUpgradeData> bikeUpgrades;
 
-        public Dictionary<TransportType, bool> UnlockTransports;
+        public List<TransportType> types;
+        public List<bool> unlock;
 
         public Plot currentPlot = Plot.None;
-        public OrderType UnlockTypeOrder = OrderType.Default;
+        public OrderType unlockTypeOrder = OrderType.Default;
+        public TransportType currentTransport = TransportType.Bike;
 
         public float level = 1;
     }

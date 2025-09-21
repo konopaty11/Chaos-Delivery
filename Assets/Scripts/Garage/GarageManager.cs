@@ -82,28 +82,28 @@ public class GarageManager : MonoBehaviour
 
     void InitilizadeUpgrades()
     {
-        //if (YG2.saves.upgrades != null && YG2.saves.upgrades.Count > 0 &&
-        //    YG2.saves.bikeUpgrades != null && YG2.saves.bikeUpgrades.Count > 0)
-        //{
-        //    upgradeDatas.AddRange(YG2.saves.bikeUpgrades);
-        //    for (int i = 0; i < upgradeDatas.Count; i++)
-        //    {
-        //        BikeUpgrades bikeUpgrade = bikes[i].GetComponent<BikeUpgrades>();
-        //        bikeUpgrade.UpgradeData = upgradeDatas[i];
-        //        UpgradesTransport.Add(bikeUpgrade);
-        //    }
+        if (YG2.saves.upgrades != null && YG2.saves.upgrades.Count > 0 &&
+            YG2.saves.bikeUpgrades != null && YG2.saves.bikeUpgrades.Count > 0)
+        {
+            upgradeDatas.AddRange(YG2.saves.bikeUpgrades);
+            for (int i = 0; i < upgradeDatas.Count; i++)
+            {
+                BikeUpgrades bikeUpgrade = bikes[i].GetComponent<BikeUpgrades>();
+                bikeUpgrade.UpgradeData = upgradeDatas[i];
+                UpgradesTransport.Add(bikeUpgrade);
+            }
 
-        //    for (int i = 0; i < YG2.saves.upgrades.Count; i++)
-        //    {
-        //        Upgrades upgrade = transports[i].GetComponent<Upgrades>();
-        //        upgrade.UpgradeData = YG2.saves.upgrades[i];
-        //        UpgradesTransport.Add(upgrade);
-        //    }
+            for (int i = 0; i < YG2.saves.upgrades.Count; i++)
+            {
+                Upgrades upgrade = transports[i].GetComponent<Upgrades>();
+                upgrade.UpgradeData = YG2.saves.upgrades[i];
+                UpgradesTransport.Add(upgrade);
+            }
 
-        //    upgradeDatas.AddRange(YG2.saves.upgrades);
-        //}
-        //else
-        //{
+            upgradeDatas.AddRange(YG2.saves.upgrades);
+        }
+        else
+        {
             foreach (GameObject transport in allTransports)
             {
                 Upgrades upgrade = transport.GetComponent<BikeUpgrades>();
@@ -113,7 +113,7 @@ public class GarageManager : MonoBehaviour
 
                 upgradeDatas.Add(upgrade.UpgradeData);
             }
-        //}
+        }
     }
 
     public void Proceed()
@@ -343,6 +343,9 @@ public class GarageManager : MonoBehaviour
         OnInitialized?.Invoke();
 
         portalController.BlockControl(false);
+
+        YG2.saves.currentTransport = TransportManager.Instance.CurrentTransportController.TransportType;
+        YG2.SaveProgress();
     }
 
     void BuyTransport()

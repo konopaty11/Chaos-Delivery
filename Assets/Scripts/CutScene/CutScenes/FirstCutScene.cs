@@ -1,7 +1,7 @@
 using System.Collections;
 using Cinemachine;
-using UnityEditor.Animations;
 using UnityEngine;
+using YG;
 
 public class FirstCutScene : CutScene
 {
@@ -21,8 +21,6 @@ public class FirstCutScene : CutScene
     [SerializeField] Transform secondTransform;
 
     [Header("Animations")]
-    [SerializeField] AnimatorController standController;
-    [SerializeField] AnimatorController sitController;
     [SerializeField] Animator standAnimator;
     [SerializeField] Animator sitAnimator;
 
@@ -82,8 +80,6 @@ public class FirstCutScene : CutScene
 
         standAnimator.enabled = false;
         sitAnimator.enabled = false;
-        standAnimator.runtimeAnimatorController = standController;
-        sitAnimator.runtimeAnimatorController = sitController;
 
         audioSource = GetComponent<AudioSource>();
     }
@@ -102,7 +98,7 @@ public class FirstCutScene : CutScene
             sitAnimator.enabled = true;
             sitAnimator.Play(sitAnimName, 0 ,0f);
 
-            float timeWait = sitController.animationClips[0].length * Random.Range(2, 4);
+            float timeWait = sitAnimator.runtimeAnimatorController.animationClips[0].length * Random.Range(2, 4);
             yield return new WaitForSeconds(timeWait);
             sitAnimator.enabled = false;
             yield return new WaitForSeconds(Random.Range(1f, 8f));
@@ -319,7 +315,7 @@ public class FirstCutScene : CutScene
         standAnimator.gameObject.SetActive(false);
         CameraManager.Instance.SetTransition(CinemachineBlendDefinition.Style.Cut);
 
-        TransportManager.Instance.TransportEnableControl(true, TransportType.Bike);
+        TransportManager.Instance.TransportEnableControl(true, YG2.saves.currentTransport);
 
         UIManager.Instance.ShowUI("Start work");
         UIManager.Instance.ShowUI("Main");

@@ -7,11 +7,11 @@
         false,
         false
     ],
-    "idSave": 120,
+    "idSave": 143,
     "upgrades": [
         {
             "transportType": 2,
-            "powerLevel": 1,
+            "powerLevel": 2,
             "stiffnessLevel": 1,
             "strengthLevel": 1
         },
@@ -43,7 +43,22 @@
             "staminaLevel": 1
         }
     ],
+    "types": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "unlock": [
+        true,
+        true,
+        true,
+        true,
+        true
+    ],
     "currentPlot": 1,
-    "UnlockTypeOrder": 2,
+    "unlockTypeOrder": 0,
+    "currentTransport": 1,
     "level": 8.129000663757325
 }

@@ -7,7 +7,7 @@
         false,
         false
     ],
-    "idSave": 145,
+    "idSave": 147,
     "upgrades": [
         {
             "transportType": 2,
@@ -59,7 +59,7 @@
     ],
     "currentPlot": 1,
     "unlockTypeOrder": 2,
-    "currentTransport": 1,
+    "currentTransport": 2,
     "level": 8.254000663757325,
     "coins": 35
 }

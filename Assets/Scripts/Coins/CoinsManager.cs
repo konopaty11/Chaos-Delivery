@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using YG;
 
 public class CoinsManager : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class CoinsManager : MonoBehaviour
 
     public static CoinsManager Instance;
 
-    int coins = 5000;
+    int coins;
     public int Coins { get => coins; set => SetCoins(value); }
 
     public static event Action AnimationEnd;
@@ -27,6 +28,7 @@ public class CoinsManager : MonoBehaviour
 
     void Start()
     {
+        coins = YG2.saves.coins;
         CoinsInit();
     }
 
@@ -39,6 +41,9 @@ public class CoinsManager : MonoBehaviour
 
         this.coins = coins;
         coinsText.text = this.coins.ToString();
+
+        YG2.saves.coins = coins;
+        YG2.SaveProgress();
     }
 
     IEnumerator AddCoinsAnimation()

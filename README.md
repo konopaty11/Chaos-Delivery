@@ -48,5 +48,9 @@
 
 </details>
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+## Установка
+1. Склонируйте репозиторий по ссылке:
+https://github.com/konopaty11/Chaos-Delivery.git
+2. Откройте проект в Unity 6000.053f1 или выше
+3. Откройте сцену: Scenes/SampleScene
+

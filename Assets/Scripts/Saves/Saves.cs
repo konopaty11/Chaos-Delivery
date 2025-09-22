@@ -15,5 +15,6 @@ namespace YG
         public TransportType currentTransport = TransportType.Bike;
 
         public float level = 1;
+        public int coins;
     }
 }

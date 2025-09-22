@@ -5,7 +5,7 @@
   <div style="margin-bottom: 20px;">
     <img src="Assets/Readme/Arts/Logo.png" 
          alt="Баннер проекта" 
-         style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 150px; height: auto;">
+         width="300px">
   </div>
 
   <!-- Нижняя часть - текст -->
@@ -23,18 +23,42 @@
 Твоя задача — доставить все заказы вовремя, не задавая вопросы по поводу содержимого груза, в странном городе с злостной полицией и кучкой ненавистников службы доставки, в которой ты работаешьвв. 
 
 ## Гемплей
-- Совершайте разнообразные заказы: <strong>обычные заказы</strong>, <strong>заказы на время</strong>, доставляйте <strong>контрабанду</strong>!
-![доставка заказа](Assets/Readme/Gifs/IssueOrder.gif)
+
+- Совершайте разнообразные заказы: <strong>обычные заказы</strong>, <strong>заказы на время</strong>, доставляйте <strong>контрабанду</strong>! 
+<div align="center">
+    <img src="Assets/Readme/Gifs/IssueOrder.gif" alt="Доставка заказа" height="450"/>
+</div>
+<br>
+
 - Выбирайте и покупайте новый транспорт.
-![доставка заказа](Assets/Readme/Gifs/BuyTransport.gif)
+<div align="center">
+    <img src="Assets/Readme/Gifs/BuyTransport.gif" alt="Покупка транспорта" height="450"/>
+</div>
+<br>
+
 - Улучшайте текущий транспорт, увеличивая <strong>скорость</strong>, <strong>управляемость</strong> и <strong>прочность</strong>
-![доставка заказа](Assets/Readme/Gifs/UpgradeTransport.gif)
+<div align="center">
+    <img src="Assets/Readme/Gifs/UpgradeTransport.gif" alt="Улучшение транспорта" height="450"/>
+</div>
+<br>
+
 - Старайтесь не врезатся, чтобы не допустить уничтожение машины. И регулярно заглядывать в автомастерскую, чтобы восстанавливать прочность.
-![доставка заказа](Assets/Readme/Gifs/RestoreStrenght.gif)
+<div align="center">
+    <img src="Assets/Readme/Gifs/RestoreStrenght.gif" alt="Восстановление прочности" height="450"/>
+</div>
+<br>
+
 - Притормаживайте перед постом полиции, чтобы не получить штраф!
-![доставка заказа](Assets/Readme/Gifs/PoliceEvent.gif)
+<div align="center">
+    <img src="Assets/Readme/Gifs/PoliceEvent.gif" alt="Злые копы" height="450"/>
+</div>
+<br>
+
 - Но в то же время набирайте скорость, чтобы увернуться от помидоров хулиганов!
-![доставка заказа](Assets/Readme/Gifs/TomatoEvent.gif)
+<div align="center">
+    <img src="Assets/Readme/Gifs/TomatoEvent.gif" alt="Томатные хулиганы" height="450"/>
+</div>
+<br>
 
 <details> 
 <summary><h2>FAQ</h2></summary>

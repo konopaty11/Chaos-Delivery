@@ -10,7 +10,7 @@ public class TrafficLight : MonoBehaviour
 
     Coroutine changeLightCoroutine;
 
-    public static UnityEvent IsStartGreen;
+    public UnityAction IsStartGreen;
 
     public bool IsGreen { get; private set; }
 

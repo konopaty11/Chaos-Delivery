@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class TurnTrigger : MonoBehaviour
 {
@@ -11,7 +9,7 @@ public class TurnTrigger : MonoBehaviour
     [SerializeField] TrafficLight trafficLight;
 
     public float TargetSpeed => targetSpeed;
-
+    public TrafficLight TrafficLight => trafficLight;
 
     public bool IsGreen()
     {

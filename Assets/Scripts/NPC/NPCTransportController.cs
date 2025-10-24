@@ -100,7 +100,7 @@ public class NPCTransportController : MonoBehaviour
 
         if (!turnTrigger.IsGreen())
         {
-            Debug.Log("sdf");
+            turnTrigger.TrafficLight.IsStartGreen += StartMovie;
             targetSpeed = 0f;
         }
 
@@ -118,5 +118,10 @@ public class NPCTransportController : MonoBehaviour
         }
 
 
+    }
+
+    void StartMovie()
+    {
+        targetSpeed = 3f;
     }
 }
